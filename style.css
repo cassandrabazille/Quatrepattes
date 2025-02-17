@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: lightcyan;
+    color: darkcyan;
+    font-family: sans-serif;
+}
+
+/* Mobile styles */
+/* @media (max-width: 600px) { */
+    /* Media query pour les appareils avec une largeur max de 600px */
+    /* body {
+      background-color: lightgreen;
+      font-size: 14px;
+    }
+  } */
+/* main {
+    border: 4px solid black;
+    max-width: 1300px;
+    margin: 0 auto;     
+}
+
+section {
+    border: 4px solid darkcyan; 
+    background: white; 
+    border-radius: 10px;
+    margin: 20px auto; 
+    min-height: 90vh;
+}  */
