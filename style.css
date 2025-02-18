@@ -183,6 +183,11 @@ h1 {
 .semibold {
 font-weight: 600;
 }
+
+.medium {
+    font-weight: 500;
+    }
+
 .sous-titre1 {
     font-size: 2rem;
 }
@@ -223,10 +228,12 @@ h1,.sous-titre1 {
 /* Section 2*/
 
 h2 {
+    text-align: center;
     margin: 4rem;
     font-size: 2.8rem;
-    text-align: center;
+   
 }
+
 
 
 .S2 {
@@ -245,7 +252,6 @@ h2 {
 .S2flex1 {
     width: 62%;
     height: 55vh;
-    border: solid 2px black;
     display: flex;
     gap: 3rem;
    
@@ -383,6 +389,8 @@ font-size: 1.6rem;
 }
 }
 
+/* Section 3*/
+
 .S3 {
     background-color: #EDFEF6;
     width: 100%;
@@ -435,7 +443,7 @@ font-size: 1.6rem;
     .S3flexdiv1 {
         width: 100%;
         height: 50%; 
-        margin-top: 2rem;
+         margin-top: 2rem;
     }
 
     .S3flexdiv2 {
@@ -447,4 +455,121 @@ font-size: 1.6rem;
 
 }
 
+/* Section 4*/
 
+.S4 {
+    width: 100%;
+ 
+   
+}
+
+.S4flex1 {
+    width: 50%;
+    height : 60vh;
+    margin-left: 25%;
+   
+   
+ }
+
+ .S4flex1element1, .S4flex1element2, .S4flex1element3 {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+ 
+   
+}
+.S4flex1element1 {
+    font-size: 2.8rem;
+
+}
+
+.S4flex1element2 {
+    font-size: 1.5rem;
+}
+
+.S4flex1element3 {
+    font-size: 1.2rem;
+}
+
+
+.whitetext {
+    color: white;
+}
+
+.bigphoto {
+    background-image: url("Images/photo3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(0.6) contrast(1.3);
+    border-radius: 0.5rem;
+  
+}
+
+.S4flex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:2rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+}
+
+.S4flex2element1, .S4flex2element2, .S4flex2element3 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+.smallphoto1 {
+    background-image: url("Images/photo3.png");
+    width:15.7%;
+   height: 10vh; 
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   filter: brightness(0.7) contrast(1.1);
+   border-radius: 0.5rem;
+
+}
+.smallphoto2  {
+background-image: url("Images/photo4.png");
+width:15.7%;
+height: 10vh; 
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+filter: brightness(0.7) contrast(1.1);
+border-radius: 0.5rem;
+
+}
+
+.smallphoto3 {
+
+    background-image: url("Images/photo5.png");
+    width:15.7%;
+    height: 10vh; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(0.7) contrast(1.1);
+    border-radius: 0.5rem;
+
+}
+
+@media (max-width: 414px) {
+   
+.S4flex1 {
+    width: 90%;
+    margin: 2rem
+}
+    
+        .S4flex2element1, .S4flex2element2, .S4flex2element3 {
+            width: 27%;
+            margin: 0; /* Assurez-vous qu'il n'y a pas de marges par défaut */
+        
+        }  
+}
