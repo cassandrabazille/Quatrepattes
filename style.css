@@ -4,11 +4,134 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background-color: lightcyan;
-    color: darkcyan;
-    font-family: sans-serif;
+html {
+    font-size: 62.5%;
+    
 }
+
+body {
+    max-width: 1440px;
+    background-color: white;
+    color: black;
+    font-family: "Inter", serif;
+    font-size: 1.4rem;
+    
+}
+
+@media (max-width: 414px) {
+
+    body {
+        font-size: 1.2rem
+      }
+    }
+
+
+nav {
+    width: 100%;
+    height: 5%;
+    background-color: #057858;
+    font-weight: 600;
+    color: white;
+    align-items: center;
+   
+}
+
+.header-container, .redheader-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.leftnav {
+    
+    display: flex;
+    flex:1;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2.7%;
+    gap: 3%;
+    
+}
+
+
+.leftnav img {
+    width: 4%;
+    height: 4%;
+    
+}   
+
+.rightnav {
+    width: 24%;
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2.7%;
+    gap: 7%;
+
+}  
+
+
+.redbox {
+    background-color: #DC2627;
+    border-radius: 3%;
+    width: 33%;
+    height: 45%;
+    align-items: center;
+    gap:7%;
+    padding: 2%
+    
+} 
+.redbox img {
+    width: 15%;
+    height: 27.5%;
+}
+
+@media (max-width: 414px) {
+
+  
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.leftnav {
+    width: 100%;    
+}
+
+ .rightnav {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 2rem; /* Ajuster l'espace entre l'image et le texte */
+  
+    
+    
+    }
+
+    .redbox {
+        width: 98%;
+        height: 5%;
+        display: flex;
+        align-items: center;
+        gap: 1rem; /* Ajuster l'espace entre l'image et le texte */
+        box-sizing: border-box;
+        padding: 1rem;
+       
+        
+    }
+
+    .redbox img {
+        width: 5%;
+        height: 5%
+
+    }
+
+}
+
+
 
 /* Mobile styles */
 /* @media (max-width: 600px) { */
