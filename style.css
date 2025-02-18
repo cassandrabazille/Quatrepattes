@@ -18,6 +18,21 @@ body {
     
 }
 
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+   
+
+}
+
 @media (max-width: 414px) {
 
     body {
@@ -30,7 +45,6 @@ nav {
     width: 100%;
     height: 5%;
     background-color: #057858;
-    font-weight: 600;
     color: white;
     align-items: center;
    
@@ -79,7 +93,8 @@ nav {
     height: 45%;
     align-items: center;
     gap:2rem;
-    padding: 2%
+    padding: 2rem
+    
     
 } 
 .redbox img {
@@ -131,4 +146,231 @@ nav {
 
 }
 
+.S1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+   
 
+}
+
+.imagepp {
+    width: 100%;
+    height: 50vh; /* Ajuster la hauteur pour s'adapter à l'écran */
+    background-image: url("Images/photo1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(0.7) contrast(1.1);
+    object-fit: cover; /* Maintenir les proportions naturelles */
+
+    
+}
+
+h1 {
+    
+    font-size: 5.3rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+font-weight: 600;
+}
+.sous-titre1 {
+    font-size: 2rem;
+}
+
+
+.S1flex1 {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    gap: 2rem
+}
+
+
+h1,.sous-titre1 {
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width: 414px) {
+
+    .imagepp {
+        height: 45vh; /* Ajuster la hauteur de l'image pour les petits écrans */
+        background-size: cover; /* Maintenir les proportions naturelles */
+        object-fit: cover; /* Maintenir les proportions naturelles */
+    }
+
+    h1 {
+        font-size:2.4rem;
+    }
+    .sous-titre1 {
+        font-size:1.4rem
+    }
+}
+
+h2 {
+    margin: 4rem;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.S2 {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        overflow: hidden;
+        
+        
+    
+}
+
+
+
+.S2flex1 {
+    width: 62%;
+    height: 55vh;
+    border: solid 2px black;
+    display: flex;
+    gap: 3rem;
+   
+   
+}
+
+.div1box1, .div1box2, .div1box3 {
+    width: 30%;
+    height: 20vh;
+    padding: 1.5rem;
+   
+    
+    
+}
+
+.div2box1, .div2box2, .div2box3 {
+    width: 10%;
+   
+    
+}
+
+.S2flex2 {
+    justify-content: space-around;
+    margin: 1rem
+}
+
+.S2flex3 {
+    justify-content: space-evenly;
+  
+}
+
+.roundborder {
+    border-radius: 0.5rem;
+    border: solid 2px white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25)
+
+}
+
+.largeredbox {
+    width: 95%;
+    height: 8vh;
+    background-color: #DC2627;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative; /* Necessary for positioning child */
+}
+
+.largeredbox img {
+    width: 5%;
+    height: 4%'
+}
+
+.largeredbox p {
+    font-size: 1.5rem;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+}
+
+.element1 {
+    font-size: 2rem
+}
+
+.element2 {
+    color: #7C808A;
+
+}
+
+.element1, .element2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bigbox {
+    border-color: rgba(94, 115, 120, 0.24);  /* opacité de 24% */
+    border-width: 0.3rem;
+}
+
+.smallbox {
+    background-color: #F5F5F5;
+    padding: 1rem
+}
+
+@media (max-width: 414px) {
+
+    .S2flex1 {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.8rem
+    }
+
+    .S2flex2 {
+        display: flex;
+        flex-direction: column;
+       
+    
+    }
+  
+    .div1box1, .div1box2, .div1box3  {
+        width: 95%;
+        height: 10vh;
+        margin: 1rem
+    
+    }
+
+    .smallbox {
+        width: 20%
+    }
+.element1 {
+font-size: 1.6rem;
+}
+
+.element2 {
+    font-size: 0.9rem
+    
+}
+.largeredbox {
+    margin-top: 2rem;
+    height: 4vh
+}
+.largeredbox img {
+    width: 4%;
+    height: 2vh
+}
+.largeredbox p {
+    font-size: 1.1rem
+}
+}
