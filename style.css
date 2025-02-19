@@ -23,9 +23,12 @@ body {
 .flexcolumn {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
 
+}
+
+.verticalcenter {
+    justify-content: center;
 }
 
 .flexrow {
@@ -35,7 +38,7 @@ body {
 
 }
 
-@media (max-width: 414px) {
+@media  (max-width: 414px) {
 
     body {
         font-size: 1.2rem
@@ -104,7 +107,7 @@ nav {
     height: 27.5%;
 }
 
-@media (max-width: 414px) {
+@media  (max-width: 414px) {
 
   
 .header-container {
@@ -463,13 +466,7 @@ font-size: 1.6rem;
    
 }
 
-.S4flex1 {
-    width: 50%;
-    height : 60vh;
-    margin-left: 25%;
-   
-   
- }
+
 
  .S4flex1element1, .S4flex1element2, .S4flex1element3 {
     display: flex;
@@ -497,12 +494,16 @@ font-size: 1.6rem;
 }
 
 .bigphoto {
+    width: 50%;
+    height: auto;
+    min-height: 60vh;
     background-image: url("Images/photo3.png");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     filter: brightness(0.6) contrast(1.3);
     border-radius: 0.5rem;
+    margin: auto;
   
 }
 
@@ -554,7 +555,7 @@ border-radius: 0.5rem;
     height: 10vh; 
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cgapover;
     filter: brightness(0.7) contrast(1.1);
     border-radius: 0.5rem;
 
@@ -569,7 +570,82 @@ border-radius: 0.5rem;
     
         .S4flex2element1, .S4flex2element2, .S4flex2element3 {
             width: 27%;
-            margin: 0; /* Assurez-vous qu'il n'y a pas de marges par défaut */
+            margin: 0; 
         
         }  
+}
+
+/* Section 5*/
+
+
+.S5 {
+    width: 100%;
+    height: 150vh;
+    background-color: #EDFEF6;
+ 
+}
+
+
+.S5 h3 {
+    margin-bottom: 2rem;
+}
+
+.S5flex1 {
+    background-color: white;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+    width: 60%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: solid 2px white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    
+
+}
+.S5box{
+    width: 55%;
+    height: 10vh;
+    background-color: #F5F5F5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-left: 1rem
+ 
+}
+
+@media  (max-width: 414px) {
+
+    .S5flex1 {
+        width: 90%
+    }
+    .S5flex2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+       
+    }
+
+    .S5box {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+.S5flex3 {
+    display: flex;
+    justify-content: center;
+}
+.S5flex4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.S5flex4 img {
+    width: 10%;
+
 }
