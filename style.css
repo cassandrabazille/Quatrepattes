@@ -38,6 +38,15 @@ body {
 
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none; 
+    
+}
 @media  (max-width: 414px) {
 
     body {
@@ -720,6 +729,78 @@ background-image: url("Images/photo4.png");
 }
 }
 
+/* Contact*/
+
+.form {
+    width: 100%;
+    height: 200vh;
+  
+
+}
+
+.formflex {
+    width: 80%;
+    height: 95%;
+    margin: auto;
+    
+}
+
+.emptybox {
+    width: 90%;
+    height: 15vh;
+    border-radius: 0.5rem;
+    border: solid 1px #7C808A;
+    margin: 2rem;
+    
+}
+
+.emptybox2 {
+    width: 95%;
+    height: 50vh;
+    border-radius: 0.5rem;
+    border: solid 1px #7C808A;
+    margin: 2rem;
+
+}
+
+.form h3 {
+    margin: 2rem;
+}
+
+.envoyer {
+    width: 95%;
+    height: 8vh;
+    background-color: #08956A;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative; 
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+@media (max-width:414px) {
+
+    .form {
+        width: auto;
+        height: auto;
+    }
+    .formflex {
+        width: 90%;
+        height: 80%;
+        margin: 2rem;
+    }
+
+    .emptybox2,.envoyer {
+        width: 90%
+    }
+}
+
+
 /* Footer*/
 
 footer {
@@ -775,5 +856,6 @@ footer img {
         margin: 1rem 0; 
     }
 }
+
 
 
