@@ -13,7 +13,7 @@
 </head>
 <body>
 <header>
-    <nav class="header-container bold">
+    <nav class="header-container flexrow bold">
     <div class="leftnav">
         <img src="Icones/Logo.png" alt="Logo pattes">
         <p>Quatre Pattes</p>
@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="contact.html#formulaire">Contact</a></li>
             </ul>
-            <div class="redbox redheader-container">
+            <div class="redbox redheader-container flexrow hstart">
                 <img src="Icones/icone_coeur.png" alt="icone coeur">
                 <ul>
                     <li>
@@ -39,14 +39,14 @@
 
     <main>
         <section class="S1">
-            <div class="imagepp flexcolumn verticalcenter S1flex1">
+            <div class="imagepp flexcolumn vcenter S1flex1">
                 <h1 class="bold">Protégeons-les Ensemble</h1>
                 <p class="sous-titre1 semibold">Chaque don compte pour leur offrir une vie meilleure</p>
             </div>
         </section>
         <h2 class="bold">Faites un don</h2>
         <section class="S2" id="faire-un-don">
-            <div class="flexcolumn S2flex1 roundborder"> <!--start of S2flex1-->
+            <div class="flexcolumn S2flex1 roundbordereffect"> <!--start of S2flex1-->
                 <div class= "S2flex1div1">  
                     <div class="S2flex2 flexrow"> <!--start of S2flex2-->
                     <div class="div1box1 flexcolumn roundborder bigbox">
@@ -68,16 +68,20 @@
                             <p>Une fois</p>
                         </div>
                         <div class="div2box2 roundborder smallbox">
-                            <p>Mensuel</p>
+                            <p>Annuel</p>
                         </div>
                         <div class="div2box3 roundborder smallbox">
-                            <p>Annuel</p>
+                            <p>Mensuel</p>
                             </div>
                         </div> <!--end of S2flex3-->
-                            <div class= "S2flex1div3 largeredbox"> 
+                        <div class="S2flex1div3 flexrow largeredbox"> 
+                            <div class="coeur">
                                 <img src="Icones/icone_coeur.png" alt="icone coeur">
+                            </div>
+                            <div class="textedon">
                                 <p>Faire un don de 50€/mois</p>  
                             </div>
+                        </div>                        
             </div> <!--end of S2flex1-->
         </section>
         <section class="S3">
@@ -95,9 +99,11 @@
         <h2 class="bold">Histoires de Réussite</h2>
         <section class="S4">
             <div class="S4flex1 flexcolumn bigphoto">
+                <div class="S4flex1elements">
                 <p class="S4flex1element1 bold">Luna</p>
                 <p class="S4flex1element2 medium">Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.</p><br>
                 <p class="S4flex1element3 medium">Janvier 2024</p>
+            </div>
         </div>
     </div>
         <div class="S4flex2 row">
@@ -159,18 +165,18 @@
             <div class="S6flex1 flexrow">
             <div class="S6flex2 flexcolumn roundborder">
                 <div class="divimage1"></div>
-                <p>"Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance."</p>
-                <h3>Refuge des Quatre Pattes - Lyon</h3>
+                <p class="S6element1">"Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance."</p>
+                <h3 class="S6element2">Refuge des Quatre Pattes - Lyon</h3>
             </div>
             <div class="S6flex2 flexcolumn roundborder">
                 <div class="divimage2"></div>
-                <p>"Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse."</p>
-                <h3>Sanctuaire Animal - Marseille</h3>
+                <p class="S6element1">"Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse."</p>
+                <h3 class="S6element2">Sanctuaire Animal - Marseille</h3>
             </div>
             <div class="S6flex2 flexcolumn roundborder">
                 <div class="divimage3"></div>
-                <p>"Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés."</p><br>
-                <h3>Refuge du Soleil - Paris</h3>
+                <p class="S6element1">"Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés."</p><br>
+                <h3 class="S6element2">Refuge du Soleil - Paris</h3>
             </div>
         </div>
     </main>
