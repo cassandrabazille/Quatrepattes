@@ -14,7 +14,7 @@ body {
     background-color: white;
     color: black;
     font-family: "Inter", serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .flexcolumn {
@@ -37,9 +37,9 @@ a {
 }
 
 /* Mediaqueries general properties */
-@media (max-width: 414px) {
+@media (max-width: 768px) {   /* 768px= Taille d'écran max, adaptée aux smartphone et aux tablettes format portrait*/
     body {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -91,7 +91,7 @@ nav {
     height: 27.5%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .header-container {
         display: flex;
         flex-direction: column;
@@ -182,7 +182,7 @@ h1,
     align-items: center;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .imagepp {
         height: 45vh;
         background-size: cover;
@@ -307,7 +307,7 @@ h2 {
     padding: 1rem;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .S2flex1 {
         width: 95%;
     }
@@ -376,14 +376,14 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 50%;
-    min-height: 40vh;
-    max-height: 55vh;
+    max-height: auto;
+    
 }
 
 .S3flexdiv1 {
     background-image: url("Images/photo2.png");
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 90%;
     background-position: right;
     filter: brightness(0.7) contrast(1.1);
     border-radius: 0.5rem;
@@ -399,7 +399,7 @@ h2 {
     padding: 3rem;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .S3flex {
         width: 100%;
         flex-direction: column;
@@ -412,6 +412,7 @@ h2 {
     .S3flexdiv1 {
         background-size: cover;
         background-position: center;
+        height:25vh
     }
     .S3flexdiv2 title {
         font-size: 1.8rem;
@@ -516,10 +517,9 @@ h2 {
     background-image: url("Images/photo5.png");
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .S4flex1 {
-        width: 90%;
-        margin: 2rem;
+        min-width: 87%;
     }
     .S4flex2element1,
     .S4flex2element2,
@@ -546,6 +546,8 @@ h2 {
 
 .S5 h3 {
     margin-bottom: 2rem;
+    margin-left: 1rem;
+    text-align: left;
 }
 
 .S5 h2 {
@@ -576,7 +578,7 @@ h2 {
     margin-left: 1rem;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .S5flex1 {
         width: 90%;
     }
@@ -588,8 +590,9 @@ h2 {
     .S5box {
         width: 90%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        font-size: 1.2rem;
     }
 }
 
@@ -603,17 +606,21 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .S5flex4 img {
     width: 10%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .S5flex3 {
         display: flex;
         flex-direction: column;
         border-radius: 0.5rem;
+    }
+    .S5flex4 {
+        margin-bottom: 3rem
     }
 }
 
@@ -638,15 +645,20 @@ h2 {
 
 .S6element1,
 .S6element2 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+.last-element {
+    margin-top: 2rem; 
 }
 
 .divimage1,
 .divimage2,
 .divimage3 {
     width: 100%;
-    height: 60%;
+    min-height: 50%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -667,7 +679,7 @@ h2 {
     background-image: url("Images/photo8.png");
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .S6 {
         width: 100%;
         height: auto;
@@ -688,7 +700,7 @@ h2 {
     .divimage2,
     .divimage3 {
         width: 100%;
-        min-height: 15rem;
+        min-height: 25rem;
     }
 }
 
@@ -696,7 +708,7 @@ h2 {
 
 .form {
     width: 100%;
-    height: 200vh;
+    height: auto;
 }
 
 .formflex {
@@ -705,7 +717,13 @@ h2 {
     margin: auto;
 }
 
-.emptybox {
+
+.form h3 {
+    margin: 2rem;
+}
+
+
+input[type="text"] {
     width: 90%;
     height: 15vh;
     border-radius: 0.5rem;
@@ -713,7 +731,20 @@ h2 {
     margin: 2rem;
 }
 
-.emptybox2 {
+select {
+    width: 90%;
+    height: 15vh;
+    border-radius: 0.5rem;
+    border: solid 1px #7C808A;
+    margin: 2rem;
+}
+
+.mystylename {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+#msg {
     width: 90%;
     height: 50vh;
     border-radius: 0.5rem;
@@ -721,11 +752,7 @@ h2 {
     margin: 2rem;
 }
 
-.form h3 {
-    margin: 2rem;
-}
-
-.envoyer {
+input[type="submit"] {
     width: 90%;
     height: 8vh;
     background-color: #08956A;
@@ -739,9 +766,10 @@ h2 {
     align-items: center;
     gap: 1.5rem;
     margin: 2rem;
+    cursor: pointer;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     .form {
         width: auto;
         height: auto;
