@@ -61,6 +61,11 @@ a {
 
 }
 
+.size15 {
+    font-size: 1.5rem
+
+}
+
 .size20 {
     font-size: 2.0rem
 
@@ -240,7 +245,7 @@ h2 {
 }
 
 .S2flex1 {
-    width: 90%;
+    width: 70%;
     height: auto;
 }
 
@@ -293,7 +298,7 @@ h2 {
 
 #donateButton {
     width: 95%;
-    height: 8vh;
+    height: 10vh;
     background-color: #DC2627;
     color: white;
     margin: 3rem;
@@ -318,13 +323,18 @@ h2 {
 }
 
 .smallbox {
-    width: 50%;
+    width: 70%;
     background-color: #F5F5F5;
     padding: 1rem;
 }
 
 /* Media query pour les écrans plus petits */
 @media (max-width: 768px) {
+
+    .S2flex1 {
+        width: 90%;
+        height: auto;
+    }
     .S2flex2 {
         display: flex;
         flex-direction: column;
@@ -353,8 +363,12 @@ h2 {
 
     .smallbox {
         width: 70%;
+        
     }
     
+    .size15 {
+        font-size: 1.0rem
+    }
 
     .S3flex {
         width: 100%;
@@ -382,9 +396,15 @@ h2 {
     }
 
     #donateButton {
-        width: 85%;
+        width: auto%;
         height: 8vh;
     }
+
+      
+#donateButton img {
+    width: 10%;
+    height: auto;
+}
 }
 /* Section 3 */
 .S3 {

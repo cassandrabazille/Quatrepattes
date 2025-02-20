@@ -16,6 +16,8 @@ function selectFrequency(frequency, element) {
   selectedFrequency = frequency;
   resetBackground("frequency");
   element.style.backgroundColor = "#42BE8F";
+  resetstylecolor("frequency");
+  element.style.color = "#FFFFFF";
   updateButtonText();
 }
 
@@ -24,6 +26,12 @@ function resetBackground(type) {
     document.querySelectorAll(".donation-option").forEach(button => button.style.backgroundColor = "");
   } else if (type === "frequency") {
     document.querySelectorAll(".frequency-option").forEach(button => button.style.backgroundColor = "");
+  }
+}
+
+function resetstylecolor(type) {
+    if (type === "frequency") {
+      document.querySelectorAll(".frequency-option").forEach(button => button.style.color = "");
   }
 }
 
