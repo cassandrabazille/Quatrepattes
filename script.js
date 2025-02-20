@@ -1,8 +1,74 @@
 //Page d'accueil
 
 // Call-to-action (CTA) : Proposer des dons de 10 €, 20 €, 50 € avec trois fréquences au choix : une fois, mensuellement, ou annuellement. Un bouton résumera dynamiquement le montant et la fréquence sélectionnés. Au clic sur le bouton, un prompt affichera l'option choisie.
-// Diaporama interactif : Mettre en avant les animaux sauvés par l'ONG, avec leurs photos, noms, histoires et une phrase inspirante.
-// Description de l'association : Bloc stylisé, moderne et visuellement attractif expliquant la mission de Quatre Pattes.
+
+let selectedAmount = null;
+let selectedFrequency = null;
+
+function selectDonation(amount, element) {
+  selectedAmount = amount;
+  resetBackground("donation");
+  element.style.backgroundColor = "#EDFEF6";
+  updateButtonText();
+}
+
+function selectFrequency(frequency, element) {
+  selectedFrequency = frequency;
+  resetBackground("frequency");
+  element.style.backgroundColor = "#42BE8F";
+  updateButtonText();
+}
+
+function resetBackground(type) {
+  if (type === "donation") {
+    document.querySelectorAll(".donation-option").forEach(button => button.style.backgroundColor = "");
+  } else if (type === "frequency") {
+    document.querySelectorAll(".frequency-option").forEach(button => button.style.backgroundColor = "");
+  }
+}
+
+function updateButtonText() {
+  let button = document.getElementById("donateButton");
+  if (selectedAmount && selectedFrequency) {
+    button.textContent = `Faire un don de ${selectedAmount}€/${selectedFrequency}`;
+  }
+}
+
+function showSelectedOption() {
+  if (selectedAmount && selectedFrequency) {
+    alert(`Vous avez choisi de faire un don de ${selectedAmount}€/${selectedFrequency}`);
+  } else {
+    alert("Veuillez sélectionner un montant et une fréquence.");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  Diaporama interactif : Mettre en avant les animaux sauvés par l'ONG, avec leurs photos, noms, histoires et une phrase inspirante.
 // Quiz interactif : Ajouter un quiz éducatif pour briser les idées reçues sur les associations de protection des animaux. Par exemple, "Vrai ou faux : Les associations ne peuvent pas aider les animaux sauvages en captivité". Le quiz affichera les bonnes réponses et un score final à la fin.
 
 // 

@@ -36,6 +36,42 @@ a {
     text-decoration: none;
 }
 
+/* font-weight */
+
+.extrabold {
+    font-weight: 800;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+/* font-size */
+
+.size14 {
+    font-size: 1.4rem
+
+}
+
+.size20 {
+    font-size: 2.0rem
+
+}
+
+/* colors */
+
+.grey {
+    color: #7C808A
+}
+
 /* Mediaqueries general properties */
 @media (max-width: 768px) {   /* 768px= Taille d'écran max, adaptée aux smartphone et aux tablettes format portrait*/
     body {
@@ -149,17 +185,6 @@ h1 {
     font-size: 5.3rem;
 }
 
-.bold {
-    font-weight: 700;
-}
-
-.semibold {
-    font-weight: 600;
-}
-
-.medium {
-    font-weight: 500;
-}
 
 .sous-titre1 {
     font-size: 2rem;
@@ -215,7 +240,7 @@ h2 {
 }
 
 .S2flex1 {
-    width: 62%;
+    width: 90%;
     height: auto;
 }
 
@@ -226,8 +251,10 @@ h2 {
     height: 20vh;
     padding: 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    
+
 }
 
 .S2flex2 {
@@ -238,15 +265,18 @@ h2 {
 
 .S2flex3 {
     display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 4rem;
+    justify-content: center; /* Vous pouvez également essayer space-between ou space-evenly */
+    align-items: center;
+    width: 100%; /* S'assure que le conteneur prend toute la largeur */
 }
 
 .div2box1,
 .div2box2,
 .div2box3 {
-    width: 11%;
+    width: 15%; /* Ajustez la largeur selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -261,100 +291,172 @@ h2 {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
-.largeredbox {
+#donateButton {
     width: 95%;
     height: 8vh;
     background-color: #DC2627;
     color: white;
-    margin: 1rem;
+    margin: 3rem;
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.largeredbox p {
-    font-size: 1.5rem;
-}
-
-.coeur img {
-    width: 40%;
+  
+#donateButton img {
+    width: 5%;
     height: auto;
-}
-
-.element1 {
-    font-size: 2rem;
-}
-
-.element2 {
-    color: #7C808A;
-}
-
-.element1,
-.element2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 8px; /* Adjust the spacing between the image and the text as needed */
 }
 
 .bigbox {
     border-color: rgba(94, 115, 120, 0.24);
     border-width: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .smallbox {
+    width: 50%;
     background-color: #F5F5F5;
     padding: 1rem;
 }
 
+/* Media query pour les écrans plus petits */
 @media (max-width: 768px) {
-    .S2flex1 {
-        width: 95%;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
     .S2flex2 {
         display: flex;
         flex-direction: column;
+        align-items: center; /* Centre les éléments */
     }
 
     .div1box1,
     .div1box2,
     .div1box3 {
-        width: 95%;
-        height: 10vh;
-        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem; /* Espacement entre les boîtes */
+    }
+
+    /* Applique une hauteur et une largeur uniformes pour les boutons de donation */
+    .donation-option {
+        width: 90%;
+        min-height: 10vh; /* Vous pouvez ajuster cette valeur selon vos besoins */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
     }
 
     .smallbox {
-        width: 20%;
+        width: 70%;
+    }
+    
+
+    .S3flex {
+        width: 100%;
+        flex-direction: column;
+        margin: 1rem;
     }
 
-    .element1 {
-        font-size: 1.6rem;
+    .div2box1,
+    .div2box2,
+    .div2box3 {
+        width: 30%; /* Ajustez la largeur selon vos besoins */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
     }
 
-    .element2 {
-        font-size: 0.9rem;
+    .size20 {
+        font-size: 1.6rem
     }
 
-    .largeredbox {
-        margin-top: 2rem;
-        height: 4vh;
+    .size14 {
+        font-size: 1.1rem
     }
 
-    .coeur img {
-        width: 35%;
-        height: auto;
-    }
-
-    .largeredbox p {
-        font-size: 1.1rem;
+    #donateButton {
+        width: 85%;
+        height: 8vh;
     }
 }
+/* Section 3 */
+.S3 {
+    width: 100%;
+    min-height: auto;
+    max-height: auto;
+    background-color: #EDFEF6;
+}
+
+.S3flex {
+    margin: 5rem;
+    padding: 5rem;
+}
+
+.S3flexdiv1,
+.S3flexdiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-height: auto;
+}
+
+.S3flexdiv1 {
+    background-image: url("Images/photo2.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: right;
+    filter: brightness(0.7) contrast(1.1);
+    border-radius: 0.5rem;
+}
+
+.S3flexdiv2 {
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+@media (max-width: 768px) {
+    .S3flex {
+        width: 100%;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .S3flexdiv1,
+    .S3flexdiv2 {
+        width: 100%;
+    }
+    .S3flexdiv1 {
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+    }
+    .S3flexdiv2 title {
+        font-size: 1.8rem;
+    }
+    .S3flexdiv2 .element2 {
+        font-size: 1.1rem;
+    }
+
+    .div1box1,
+    .div1box2,
+    .div1box3 {
+        width: 90%;
+        height: auto;
+    }
+}
+
 
 
 /* Section 3 */
@@ -420,6 +522,14 @@ h2 {
     .S3flexdiv2 .element2 {
         font-size: 1.1rem;
     }
+
+    .div1box1,
+.div1box2,
+.div1box3 {
+    width: 100%; 
+  
+    
+}
 }
 
 /* Section 4*/

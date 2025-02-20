@@ -43,50 +43,41 @@
     </section>
     <h2 class="bold">Faites un don</h2>
     <section class="S2" id="faire-un-don">
-        <div class="flexcolumn S2flex1 roundbordereffect">
-            <!--start of S2flex1-->
+        <div class="S2flex1 flexcolumn roundbordereffect">   <!--start of S2flex1-->
             <div class="S2flex1div1">
-                <div class="S2flex2 flexrow">
-                    <!--start of S2flex2-->
-                    <div class="div1box1 flexcolumn roundborder bigbox">
-                        <p class="element1 bold">10€</p>
-                        <p class="element2 semibold">permet de nourrir 5 animaux pendant une journée</p>
-                    </div>
-                    <div class="div1box2 flexcolumn roundborder bigbox">
-                        <p class="element1 bold">20€</p>
-                        <p class="element2 semibold">permet d’héberger un animal sauvage pendant une nuit</p>
-                    </div>
-                    <div class="div1box3 flexcolumn roundborder bigbox">
-                        <p class="element1 bold">50€</p>
-                        <p class="element2 semibold">permet de financer les soins vétérinaires complets pour un animal</p>
-                    </div>
-                </div>
-                <!--end of S2flex2-->
+                <div class="S2flex2 flexrow">        <!--start of S2flex2-->
+                    <div class="div1box1">
+                        <button id="donation1" class="donation-option roundborder bigbox flexcolumn" data-amount="10" onclick="selectDonation(10, this)"><span class="bold size20">10€</span><br><span class="semibold size14 grey">permet de nourrir 5 animaux pendant une journée</span></button>
+                    </div>  
+                        <div class="div1box2">
+                        <button id="donation2" class="donation-option roundborder bigbox flexcolumn" data-amount="20" onclick="selectDonation(20, this)"><span class="bold size20">20€</span><br><span class="semibold size14 grey">permet d’héberger un animal sauvage pendant une nuit</span></button>
+                    </div> 
+                        <div class="div1box3">
+                        <button id="donation3" class="donation-option roundborder bigbox flexcolumn" data-amount="50" onclick="selectDonation(50, this)"><span class="bold size20">50€</span><br><span class="semibold size14 grey">permet de financer les soins vétérinaires complets pour un animal</span></button>
+                    </div> 
+                </div>               <!--end of S2flex2-->
+            </div>     <!--end of S2flex1div1-->
                 <div class="S2flex1div2">
-                    <div class="flexrow S2flex3">
+                    <div class="S2flex3 flexrow">
                         <!--start of S2flex3-->
-                        <div class="div2box1 roundborder smallbox">
-                            <p>Une fois</p>
+                            <div class="div2box1 ">
+  <button id="frequency1" class="frequency-option roundborder smallbox" data-frequency="once" onclick="selectFrequency('une fois', this)">Une fois</button>
+                            </div>
+                            <div class="div2box2">
+                            <button id="frequency2" class="frequency-option roundborder smallbox" data-frequency="monthly" onclick="selectFrequency('mensuellement', this)">Mensuel</button>
                         </div>
-                        <div class="div2box2 roundborder smallbox">
-                            <p>Annuel</p>
-                        </div>
-                        <div class="div2box3 roundborder smallbox">
-                            <p>Mensuel</p>
-                        </div>
-                    </div>
-                    <!--end of S2flex3-->
-                    <div class="S2flex1div3 flexrow largeredbox">
-                        <div class="coeur">
-                            <img src="Icones/icone_coeur.png" alt="icone coeur">
-                        </div>
-                        <div class="textedon">
-                            <p>Faire un don de 50€/mois</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--end of S2flex1-->
+                        <div class="div2box3">
+                            <button id="frequency3" class="frequency-option roundborder smallbox" data-frequency="annually" onclick="selectFrequency('annuellement', this)">Annuel</button>
+                          </div>
+                        </div>  <!--end of S2flex1div2-->
+                        <div class="S2flex1div3 flexrow">
+                              <button id="donateButton" class="textedon" onclick="showSelectedOption()">
+                                <img src="Icones/icone_coeur.png" alt="icone coeur">
+                                Faire un don
+                              </button>
+                          </div> <!--end of S2flex1div3-->                          
+            </div>  <!--end of S2flex1-->
+         
     </section>
     <section class="S3">
         <div class="S3flex flexrow">
@@ -200,6 +191,7 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
         </body>
         </html>
         
