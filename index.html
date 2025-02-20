@@ -90,26 +90,31 @@
             </div>
         </div>
     </section>
+  
     <h2 class="bold">Histoires de Réussite</h2>
-    <section class="S4">
-        <div class="S4flex1 flexcolumn bigphoto">
-            <div class="S4flex1elements">
-                <p class="S4flex1element1 bold">Luna</p>
-                <p class="S4flex1element2 medium">Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.</p>
-                <p class="S4flex1element3 medium">Janvier 2024</p>
-            </div>
+    <section class="gallery">
+      <div class="main-image">
+        <img id="main-image" src="Images/photo3.png" alt="Photo principale">
+        <div class="text">
+          <p id="name" class="bold">Luna</p>
+          <p id="story" class="semibold">Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.</p>
+          <p id="date" class="medium">Janvier 2024</p>
         </div>
-        <div class="S4flex2 row">
-            <div class="S4flex2element1 smallphoto1">
-                <h3 class="bold whitetext">Luna</h3>
-            </div>
-            <div class="S4flex2element2 smallphoto2">
-                <h3 class="bold whitetext">Oscar</h3>
-            </div>
-            <div class="S4flex2element3 smallphoto3">
-                <h3 class="bold whitetext">Max</h3>
-            </div>
+      </div>
+      <div class="miniatures">
+        <div class="minimage" onclick="ok('Images/photo3.png', 'Luna', 'Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.', 'Janvier 2024')">
+          <img src="Images/photo3.png" alt="Luna">
+          <p class="bold size28">Luna</p>
         </div>
+        <div class="minimage" onclick="ok('Images/photo4.png', 'Oscar', 'Oscar a été sauvé d\'une situation d\'urgence et est maintenant en bonne santé et heureux dans sa nouvelle maison.', 'Février 2024')">
+          <img src="Images/photo4.png" alt="Oscar">
+          <p class="bold size28">Oscar</p>
+        </div>
+        <div class="minimage" onclick="ok('Images/photo5.png', 'Max', 'Max a été trouvé errant dans la rue et a été adopté par une famille aimante. Il est maintenant en sécurité et heureux.', 'Mars 2024')">
+          <img src="Images/photo5.png" alt="Max">
+          <p class="bold size28">Max</p>
+        </div>
+      </div>
     </section>
     <section class="S5">
         <h2>Testez Vos Connaissances</h2>
@@ -134,6 +139,8 @@
                 <div class="S5box semibold">Faux</div>
             </div>
         </div>
+        <div class="score"></div>
+    </section>    
         <h2>Notre Impact</h2>
         <div class="S5flex3 flexrow">
             <div class="S5flex4 flexcolumn">

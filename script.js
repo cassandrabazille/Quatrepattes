@@ -1,6 +1,5 @@
-//Page d'accueil
 
-// Call-to-action (CTA) : Proposer des dons de 10 €, 20 €, 50 € avec trois fréquences au choix : une fois, mensuellement, ou annuellement. Un bouton résumera dynamiquement le montant et la fréquence sélectionnés. Au clic sur le bouton, un prompt affichera l'option choisie.
+// Call-to-action (CTA) : 
 
 let selectedAmount = null;
 let selectedFrequency = null;
@@ -51,69 +50,69 @@ function showSelectedOption() {
 }
 
 
+//  Diaporama interactif : 
+
+function ok(src, name, story, date) {
+    document.getElementById('main-image').src = src;
+    document.getElementById('name').textContent = name;
+    document.getElementById('story').textContent = story;
+    document.getElementById('date').textContent = date;
+  }
+  
 
 
+// Quiz interactif : 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const questions = [
+        {
+            question: "Les associations gardent la majorité des dons pour leur fonctionnement",
+            correctAnswer: "Faux",
+            explanation: "Faux ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels."
+        },
+        {
+            question: "Les refuges ne prennent que les animaux en bonne santé",
+            correctAnswer: "Faux",
+            explanation: "Faux ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !"
+        },
+        {
+            question: "Les associations ont trop de moyens grâce aux dons",
+            correctAnswer: "Faux",
+            explanation: "Faux ! Les besoins sont immenses et constants. Chaque don est précieux pour sauver plus d'animaux."
+        }
+    ];
+
+    let score = 0;
+    let answeredQuestions = 0;
+
+    questions.forEach((q, index) => {
+        const questionElement = document.querySelectorAll('.S5flex1')[index];
+        const vraiButton = questionElement.querySelectorAll('.S5box')[0];
+        const fauxButton = questionElement.querySelectorAll('.S5box')[1];
+
+        const updateContent = (isCorrect, buttonElement, otherButtonElement) => {
+            if (!buttonElement.style.backgroundColor && !otherButtonElement.style.backgroundColor) {
+                answeredQuestions++;
+                let icon = isCorrect ? '✔️' : '❌';
+                let color = isCorrect ? '#D6FCE1' : '#FFE2E2';
+                questionElement.innerHTML = `<h3>${q.question}</h3><p style="background-color: ${color}; padding: 10px; border-radius: 5px;">${icon} ${q.explanation}</p>`;
+                displayScore();
+            }
+        };
+
+        vraiButton.addEventListener('click', () => updateContent(q.correctAnswer === "Vrai", vraiButton, fauxButton));
+        fauxButton.addEventListener('click', () => updateContent(q.correctAnswer === "Faux", fauxButton, vraiButton));
+    });
+
+    function displayScore() {
+        if (answeredQuestions === questions.length) {
+            document.querySelector('.score').textContent = `Votre score est de : ${score} / ${questions.length}`;
+        }
+    }
+});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  Diaporama interactif : Mettre en avant les animaux sauvés par l'ONG, avec leurs photos, noms, histoires et une phrase inspirante.
-// Quiz interactif : Ajouter un quiz éducatif pour briser les idées reçues sur les associations de protection des animaux. Par exemple, "Vrai ou faux : Les associations ne peuvent pas aider les animaux sauvages en captivité". Le quiz affichera les bonnes réponses et un score final à la fin.
-
-// 
-// 
-// 
-// Astuces
-// //dons : Une variable mensuelle et un variable montant, mettre une valeur par défaut à 20 euros mensuel par ex //
-//photos (exo aspirateur): Quand je clique sur Oscar, l'image d'Oscar s'affiche en grand.4 parametres image nom de l'image, deuxieme texte, troisieme texte //
-//testez vos connaissances : utiliser inner html//
-//formulaire : Variable si on répond aux trois questions il affiche le score //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Page contact :
-
-//     Un formulaire contenant le nom, le sujet du message, l'adresse email, un message et un bouton envoyer
-//     Une liste déroulante de sujets (exemple : Faire un don, Devenir bénévole, Questions générales).
-//     Champs obligatoires pour le nom, adresse email et message.
-//     Validation des champs avec un script JavaScript pour s'assurer qu'ils ne sont pas vides et qu'une adresse email valide est saisie.
-//     Bouton d'envoi et confirmation que le formulaire a bien été soumis.
+// Formulaire : 
 
 document.addEventListener("DOMContentLoaded", function() {
     // Vérifier le message de succès dans le stockage local
