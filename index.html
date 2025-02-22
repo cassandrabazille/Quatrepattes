@@ -11,24 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="whitebg black size16">
 <header>
-    <nav class="header-container flexrow bold">
-        <div class="leftnav">
+    <nav class="header-container flexrow bold darkgreenbg white alignitmcenter">
+        <div class="leftnav alignitmcenter justify-start flex1share gap05">
             <img src="Icones/Logo.png" alt="Logo pattes">
             <p>Quatre Pattes</p>
         </div>
-        <div class="rightnav">
+        <div class="rightnav alignitmcenter justify-end flex1share gap7 margin27" >
             <ul>
-                <li><a href="index.html#S1">Accueil</a></li>
+                <li><a href="index.html#S1" class="white">Accueil</a></li>
             </ul>
             <ul>
-                <li><a href="contact.html#formulaire">Contact</a></li>
+                <li><a href="contact.html#formulaire" class="white">Contact</a></li>
             </ul>
-            <div class="redbox redheader-container flexrow hstart">
+            <div class="redbox redbg roundborder alignitmcenter redheader-container flexrow gap2 pad2">
                 <img src="Icones/icone_coeur.png" alt="icone coeur">
                 <ul>
-                    <li><a href="#faire-un-don">Faire un don</a></li>
+                    <li><a href="#faire-un-don" class="white">Faire un don</a></li>
                 </ul>
             </div>
         </div>
@@ -36,164 +36,151 @@
 </header>
 <main>
     <section class="S1">
-        <div class="imagepp flexcolumn vcenter S1flex1">
-            <h1 class="bold">Protégeons-les Ensemble</h1>
-            <p class="sous-titre1 semibold">Chaque don compte pour leur offrir une vie meilleure</p>
+        <div class="imagepp flexcolumn vcenter S1flex1 height100 justify-center alignitmcenter gap2">
+            <h1 class="bold size53 white  alignitmcenter">Protégeons-les Ensemble</h1>
+            <p class="sous-titre1 semibold size20 white justify-center alignitmcenter">Chaque don compte pour leur offrir une vie meilleure</p>
         </div>
     </section>
-    <h2 class="bold">Faites un don</h2>
-    <section class="S2" id="faire-un-don">
-        <div class="S2flex1 flexcolumn roundbordereffect">   <!--start of S2flex1-->
+    <h2 class="bold size28 textaligncenter margin5">Faites un don</h2>
+    <section class="S2 justify-center margin5" id="faire-un-don">
+        <div class="S2flex1 flexcolumn roundborderwhiteeffect width70 justify-center alignitmcenter gap2">   <!--start of S2flex1-->
             <div class="S2flex1div1">
-                <div class="S2flex2 flexrow">        <!--start of S2flex2-->
-                    <div class="div1box1">
-                        <button id="donation1" class="donation-option roundborder bigbox flexcolumn" data-amount="10" onclick="selectDonation(10, this)"><span class="bold size20">10€</span><br><span class="semibold size14 grey">permet de nourrir 5 animaux pendant une journée</span></button>
-                    </div>  
-                        <div class="div1box2">
-                        <button id="donation2" class="donation-option roundborder bigbox flexcolumn" data-amount="20" onclick="selectDonation(20, this)"><span class="bold size20">20€</span><br><span class="semibold size14 grey">permet d’héberger un animal sauvage pendant une nuit</span></button>
-                    </div> 
-                        <div class="div1box3">
-                        <button id="donation3" class="donation-option roundborder bigbox flexcolumn" data-amount="50" onclick="selectDonation(50, this)"><span class="bold size20">50€</span><br><span class="semibold size14 grey">permet de financer les soins vétérinaires complets pour un animal</span></button>
-                    </div> 
+                <div class="S2flex2 flexrow justify-spacearound margin2">        <!--start of S2flex2-->
+                        <button id="donation1" class="donation-option roundborder greyborder width30 flexcolumn pad2" data-amount="10" onclick="selectDonation(10, this)"><span class="bold size20">10€</span><br><span class="semibold size14 grey">permet de nourrir 5 animaux pendant une journée</span></button>
+                        <button id="donation2" class="donation-option roundborder greyborder width30 flexcolumn pad2" data-amount="20" onclick="selectDonation(20, this)"><span class="bold size20">20€</span><br><span class="semibold size14 grey">permet d’héberger un animal sauvage pendant une nuit</span></button>
+                        <button id="donation3" class="donation-option roundborder greyborder width30 flexcolumn pad2" data-amount="50" onclick="selectDonation(50, this)"><span class="bold size20">50€</span><br><span class="semibold size14 grey">permet de financer les soins vétérinaires complets pour un animal</span></button>
                 </div>               <!--end of S2flex2-->
             </div>     <!--end of S2flex1div1-->
                 <div class="S2flex1div2">
-                    <div class="S2flex3 flexrow">
-                        <!--start of S2flex3-->
-                            <div class="div2box1 ">
-                                 <button id="frequency1" class="frequency-option roundborder smallbox" data-frequency="once" onclick="selectFrequency('une fois', this)"><span class="semibold size15">Une fois</span></button>
-                            </div>
-                            <div class="div2box2">
-                            <button id="frequency2" class="frequency-option roundborder smallbox" data-frequency="monthly" onclick="selectFrequency('mensuellement', this)"><span class="semibold size15">Mensuel</span></button>
-                        </div>
-                        <div class="div2box3">
-                            <button id="frequency3" class="frequency-option roundborder smallbox" data-frequency="annually" onclick="selectFrequency('annuellement', this)"><span class="semibold size15">Annuel</span></button>
-                          </div>
-                        </div>  <!--end of S2flex1div2-->
-                        <div class="S2flex1div3 flexrow">
-                              <button id="donateButton" class="textedon" onclick="showSelectedOption()">
-                                <img src="Icones/icone_coeur.png" alt="icone coeur">
+                    <div class="S2flex3 flexrow justify-spacearound gap2">     <!--start of S2flex3-->
+                            <button id="frequency1" class="frequency-option roundborderwhite width70 lightgreybg nowrap pad1" data-frequency="once" onclick="selectFrequency('une fois', this)"><span class="semibold size14">Une fois</span></button>
+                            <button id="frequency2" class="frequency-option roundborderwhite width70 lightgreybg nowrap pad1" data-frequency="monthly" onclick="selectFrequency('mensuellement', this)"><span class="semibold size14">Mensuel</span></button>
+                            <button id="frequency3" class="frequency-option roundborderwhite width70 lightgreybg nowrap pad1" data-frequency="annually" onclick="selectFrequency('annuellement', this)"><span class="semibold size14">Annuel</span></button>
+                        </div>  <!--end of S2flex3-->
+                    </div> <!--end of S2flex1div2-->
+                        <div class="S2flex1div3 flexrow width97">
+                              <button id="donateButton" class="textedon redbg white roundborder width97 height10 justify-center alignitmcenter margin2" onclick="showSelectedOption()">
+                                <img src="Icones/icone_coeur.png" alt="icone coeur" class="margin2">
                                 Faire un don
                               </button>
                           </div> <!--end of S2flex1div3-->                          
             </div>  <!--end of S2flex1-->
-         
     </section>
-    <section class="S3">
-        <div class="S3flex flexrow">
-            <div class="S3flexdiv1"></div>
-            <div class="S3flexdiv2 flexcolumn">
-                <h3 class="title">Notre Mission</h3>
-                <p class="element2">Depuis 2010, Quatre Pattes œuvre sans relâche pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en détresse et sensibiliser le public à la cause animale.</p>
-                <p class="element2">Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de familles d'accueil et nos partenariats avec des refuges, nous leur offrons une seconde chance.</p>
-                <p class="element2">Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres qui comptent sur nous.</p>
+    <section class="S3 lightgreenbg">
+        <div class="S3flex flexrow pad5 margin5 ">
+            <div class="S3bgimage width50"></div>
+            <div class="S3flexdiv2 round-right whitebg flexcolumn alignitmflexstart width50 gap2 pad5">
+                <h2 class="bold size28 textaligncenter pad5">Notre Mission</h2>
+                <p class="size14 medium">Depuis 2010, Quatre Pattes œuvre sans relâche pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en détresse et sensibiliser le public à la cause animale.</p>
+                <p class="size14 medium">Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de familles d'accueil et nos partenariats avec des refuges, nous leur offrons une seconde chance.</p>
+                <p class="size14 medium">Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres qui comptent sur nous.</p>
             </div>
         </div>
     </section>
-  
-    <h2 class="bold">Histoires de Réussite</h2>
-    <section class="gallery">
-      <div class="main-image">
+    <h2 class="bold size28 textaligncenter">Histoires de Réussite</h2>
+    <section class="S4 margin4auto maxwidth80">
+      <div class="main-box roundborder textaligncenter positionrelative">
         <img id="main-image" src="Images/photo3.png" alt="Photo principale">
-        <div class="text">
-          <p id="name" class="bold">Luna</p>
-          <p id="story" class="semibold">Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.</p>
-          <p id="date" class="medium">Janvier 2024</p>
+        <div class="textposition white positionabsolute textalignleft">
+          <p id="name" class="bold size28 margin1">Luna</p>
+          <p id="story" class="semibold size15 margin1">Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.</p>
+          <p id="date" class="medium size12 margin1">Janvier 2024</p>
         </div>
       </div>
-      <div class="miniatures">
-        <div class="minimage" onclick="ok('Images/photo3.png', 'Luna', 'Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.', 'Janvier 2024')">
+      <div class="miniatures justify-spacearound pad1">
+        <div class="mini-box positionrelative roundborder flexcolumn flex1share margin1" onclick="ok('Images/photo3.png', 'Luna', 'Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.', 'Janvier 2024')">
           <img src="Images/photo3.png" alt="Luna">
-          <p class="bold size28">Luna</p>
+          <p class="bold size28 white positionabsolute nameposition ">Luna</p>
         </div>
-        <div class="minimage" onclick="ok('Images/photo4.png', 'Oscar', 'Oscar a été sauvé d\'une situation d\'urgence et est maintenant en bonne santé et heureux dans sa nouvelle maison.', 'Février 2024')">
+        <div class="mini-box positionrelative roundborder flexcolumn textaligncenter flex1share margin1" onclick="ok('Images/photo4.png', 'Oscar', 'Oscar a été sauvé d\'une situation d\'urgence et est maintenant en bonne santé et heureux dans sa nouvelle maison.', 'Février 2024')">
           <img src="Images/photo4.png" alt="Oscar">
-          <p class="bold size28">Oscar</p>
+          <p class="bold size28 white positionabsolute nameposition">Oscar</p>
         </div>
-        <div class="minimage" onclick="ok('Images/photo5.png', 'Max', 'Max a été trouvé errant dans la rue et a été adopté par une famille aimante. Il est maintenant en sécurité et heureux.', 'Mars 2024')">
+        <div class="mini-box positionrelative roundborder flexcolumn textaligncenter flex1share margin1" onclick="ok('Images/photo5.png', 'Max', 'Max a été trouvé errant dans la rue et a été adopté par une famille aimante. Il est maintenant en sécurité et heureux.', 'Mars 2024')">
           <img src="Images/photo5.png" alt="Max">
-          <p class="bold size28">Max</p>
+          <p class="bold size28 white positionabsolute nameposition">Max</p>
         </div>
       </div>
     </section>
-    <section class="S5">
-        <h2>Testez Vos Connaissances</h2>
-        <div class="S5flex1 flexcolumn">
-            <h3>Les associations gardent la majorité des dons pour leur fonctionnement</h3>
+    <section class="S5 lightgreenbg pad5 flexcolumn justify-spacearound alignitmcenter gap3">
+        <h2 class="bold size28 textaligncenter margin5">Testez Vos Connaissances</h2>
+        <div class="S5flex1 whitebg roundborderwhiteeffect flexcolumn width60 pad2">
+            <h3 class="textalignleft pad1 textaligncenter">Les associations gardent la majorité des dons pour leur fonctionnement</h3>
             <div class="S5flex2 flexrow">
-                <div class="S5box semibold">Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement</div>
-                <div class="S5box semibold">Faux</div>
+                <div class="S5box justify-start alignitmcenter lightgreybg roundborder width60 semibold size15 pad1 margin05">Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement</div>
+                <div class="S5box justify-start alignitmcenter lightgreybg roundborder width60 semibold size15 pad1 margin05">Faux</div>
             </div>
         </div>
-        <div class="S5flex1 flexcolumn">
-            <h3>Les refuges ne prennent que les animaux en bonne santé</h3>
+        <div class="S5flex1 whitebg roundborderwhiteeffect flexcolumn width60 pad2">
+            <h3 class="textalignleft pad1 textaligncenter">Les refuges ne prennent que les animaux en bonne santé</h3>
             <div class="S5flex2 flexrow">
-                <div class="S5box semibold">Vrai, ils refusent les animaux malades car c'est trop coûteux</div>
-                <div class="S5box semibold">Faux</div>
+                <div class="S5box justify-start alignitmcenter lightgreybg roundborder width60 semibold size15 pad1 margin05">Vrai, ils refusent les animaux malades car c'est trop coûteux</div>
+                <div class="S5box justify-start alignitmcenter lightgreybg roundborder width60 semibold size15 pad1 margin05">Faux</div>
             </div>
         </div>
-        <div class="S5flex1 flexcolumn">
-            <h3>Les associations ont trop de moyens grâce aux dons</h3>
+        <div class="S5flex1 whitebg roundborderwhiteeffect flexcolumn width60 pad2">
+            <h3 class="textalignleft pad1 textaligncenter">Les associations ont trop de moyens grâce aux dons</h3>
             <div class="S5flex2 flexrow">
-                <div class="S5box semibold">Vrai, elles reçoivent beaucoup d'argent des donateurs</div>
-                <div class="S5box semibold">Faux</div>
+                <div class="S5box justify-start alignitmcenter lightgreybg roundborder width60 semibold size15 pad1 margin05">Vrai, elles reçoivent beaucoup d'argent des donateurs</div>
+                <div class="S5box justify-start alignitmcenter lightgreybg roundborder width60 semibold size15 pad1 margin05">Faux</div>
             </div>
         </div>
-        <div class="score"></div>
-    </section>    
-        <h2>Notre Impact</h2>
-        <div class="S5flex3 flexrow">
-            <div class="S5flex4 flexcolumn">
+        <div class="score textaligncenter bold margin5"></div>
+    </section>
+    <section class="S6 lightgreenbg pad5">
+        <h2 class="bold size28 textaligncenter margin5">Notre Impact</h2>
+        <div class="S6flex3 flexrow">
+            <div class="S6flex4 flexcolumn alignitmcenter width100 gap2">
                 <img src="Icones/icone_maison.png" alt="Icone de maison">
                 <h3>50+ Refuges</h3>
-                <p>Partenaires à travers la France</p>
+                <p class="alignitmcenter pad5">Partenaires à travers la France</p>
             </div>
-            <div class="S5flex4 flexcolumn">
+            <div class="S6flex4 flexcolumn alignitmcenter width100 gap2">
                 <img src="Icones/icone_patte.png" alt="Icone de pattes d'animal">
                 <h3>1000+ Animaux</h3>
-                <p>Sauvés chaque année</p>
+                <p class="alignitmcenter pad5">Sauvés chaque année</p>
             </div>
-            <div class="S5flex4 flexcolumn">
+            <div class="S6flex4 flexcolumn alignitmcenter width100 gap2">
                 <img src="Icones/icone_couverts.png" alt="Icone de couverts">
                 <h3>10 000+ Repas</h3>
-                <p>Distribués par mois</p>
+                <p class="alignitmcenter pad5">Distribués par mois</p>
             </div>
         </div>
     </section>
-    <section class="S6">
-        <h2>Témoignages</h2>
-        <div class="S6flex1 flexrow">
-            <div class="S6flex2 flexcolumn roundbordereffect">
-                <div class="divimage1"></div>
-                <p class="S6element1">"Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance."</p>
-                <h3 class="S6element2">Refuge des Quatre Pattes - Lyon</h3>
+    <section class="S7">
+        <h2 class="bold size28 textaligncenter margin5">Témoignages</h2>
+        <div class="S7flex1 flexrow justify-spacearound height50 margin5">
+            <div class="S7flex2 flexcolumn width30 roundborderwhiteeffect pad2">
+                <div class="S7image1"></div>
+                <p class="size15 margin1">"Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance."</p>
+                <h3 class="size15 margin05">Refuge des Quatre Pattes - Lyon</h3>
             </div>
-            <div class="S6flex2 flexcolumn roundbordereffect">
-                <div class="divimage2"></div>
-                <p class="S6element1">"Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse."</p>
-                <h3 class="S6element2">Sanctuaire Animal - Marseille</h3>
+            <div class="S7flex2 flexcolumn width30 roundborderwhiteeffect pad2">
+                <div class="S7image2"></div>
+                <p class="size15 margin1">"Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse."</p>
+                <h3 class="size15 margin05">Sanctuaire Animal - Marseille</h3>
             </div>
-            <div class="S6flex2 flexcolumn roundbordereffect">
-                <div class="divimage3"></div>
-                <p class="S6element1 last-element">"Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés."</p>
-                <h3 class="S6element2 last-element">Refuge du Soleil - Paris</h3>
+            <div class="S7flex2 flexcolumn width30 roundborderwhiteeffect pad2">
+                <div class="S7image3"></div>
+                <p class="size15 margin1 margin2">"Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés."</p>
+                <h3 class="size15 margin05 margin1">Refuge du Soleil - Paris</h3>
             </div>
         </main>
-        <footer>
+        <footer class="darkgreybg pad2">
             <div class="footer-container flexrow">
-                <div class="footer1 flexcolumn">
-                    <h3 class="whitetext">Quatre Pattes</h3>
-                    <p>Ensemble, protégeons les animaux et donnons-leur une vie meilleure</p>
+                <div class="footer1 flexcolumn flex1share gap2">
+                    <h3 class="white">Quatre Pattes</h3>
+                    <p class="grey">Ensemble, protégeons les animaux et donnons-leur une vie meilleure</p>
                 </div>
-                <div class="footer2 flexcolumn">
-                    <h3 class="whitetext">Contact</h3>
+                <div class="footer2 flexcolumn flex1share gap2">
+                    <h3 class="white">Contact</h3>
                     <div class="divcontact flexrow">
                         <img src="Icones/icone_mail.png" alt="icone du mail">
-                        <p>contact@quatrepattes.org</p>
+                        <p class="grey">contact@quatrepattes.org</p>
                     </div>
                 </div>
-                <div class="footer3 flexcolumn">
-                    <h3 class="whitetext">Suivez-nous</h3>
+                <div class="footer3 flexcolumn flex1share gap2">
+                    <h3 class="white">Suivez-nous</h3>
                     <br>
                 </div>
             </div>

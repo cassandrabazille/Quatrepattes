@@ -11,27 +11,24 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
-<body>
+<body class="whitebg black size16">
     <header>
-        <nav class="header-container flexrow bold">
-        <div class="leftnav">
-            <img src="Icones/Logo.png" alt="Logo pattes">
-            <p>Quatre Pattes</p>
-        </div>
-            <div class="rightnav">
+        <nav class="header-container flexrow bold darkgreenbg white alignitmcenter">
+            <div class="leftnav alignitmcenter justify-start flex1share gap05">
+                <img src="Icones/Logo.png" alt="Logo pattes">
+                <p>Quatre Pattes</p>
+            </div>
+            <div class="rightnav alignitmcenter justify-end flex1share gap7 margin27" >
                 <ul>
-                    <li><a href="index.html#S1">Accueil</a></li>
+                    <li><a href="index.html#S1" class="white">Accueil</a></li>
                 </ul>
                 <ul>
-                    <li><a href="contact.html#formulaire">Contact</a></li>
+                    <li><a href="contact.html#formulaire" class="white">Contact</a></li>
                 </ul>
-                <div class="redbox redheader-container flexrow hstart">
+                <div class="redbox redbg roundborder alignitmcenter redheader-container flexrow gap2 pad2">
                     <img src="Icones/icone_coeur.png" alt="icone coeur">
                     <ul>
-                        <li>
-                            <a href="index.html#faire-un-don">Faire un don</a>
-                        </li>
+                        <li><a href="#faire-un-don" class="white">Faire un don</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,88 +36,52 @@
     </header>
 <main>
     <section class="form" id="formulaire">
-        <h2>Contactez-nous</h2>
-        <div class="formflex flexcolumn roundborder">
+        <h2 class="size28 textaligncenter margin5">Contactez-nous</h2>
+        <div class="formflex flexcolumn maxwidth80 roundborder marginauto">
             <form id="registrationForm" onsubmit="return validationForm()">
                 <div class="formelt">
-                    <h3>Nom</h3>
-                    <input type="text" id="name">
+                    <h3 class="margin2">Nom</h3>
+                    <input type="text" id="name" class="width90 height15 margin2">
                     <span id="error_name" class="error"></span>
                 </div>
                 <div class="formelt">
-                    <h3>Email</h3>
-                    <input type="text" id="mail">
+                    <h3 class="margin2">Email</h3>
+                    <input type="text" id="mail" class="width90 height15 margin2">
                     <span id="error_mail" class="error"></span>
                 </div>
                 <div class="formelt">
-                    <h2>Sujet</h2>
-                    <select name="my_html_select_box">
-                        <option class="mystylename">Faire un don</option>
-                        <option class="mystylename">Devenir bénévole</option>
-                        <option class="mystylename">Questions générales</option>
+                    <h3 class="margin2">Sujet</h3>
+                    <select name="my_html_select_box" class="width90 height15 solidgreyborder margin2">
+                        <option class="size10">Faire un don</option>
+                        <option class="size10">Devenir bénévole</option>
+                        <option class="size10">Questions générales</option>
                     </select>
                 <div class="formelt">
-                    <h3>Message</h3>
-                    <input type="text" id="msg">
+                    <h3 class="margin2">Message</h3>
+                    <input type="text" id="msg" class="width90 height50 margin2">
                     <span id="error_msg" class="error"></span>
                 </div>
-                <input type="submit" value="Envoyer">
+                <input type="submit" value="Envoyer" class="mediumgreenbg white width90 height10 roundborder margin2">
                 <span id="success_message" class="success"></span>
             </form>
         </div>  <!-- end of formflex -->
     </section>
-    
-    <script src="script.js"></script>
-    
-    
-   
-    
-    <!-- <section class ="form" id="formulaire">
-        <h2>Contactez-nous</h2>
-        <div class="formflex flexcolumn roundborder">
-            <div class="formelt">
-                <h3>Nom</h3>
-                <div class="emptybox"></div>
-            </div>
-
-            <div class="formelt">
-            <h3>Email</h3>
-            <div class="emptybox"></div>
-        </div>
-
-            <div class="formelt">
-            <h3>Sujet</h3>
-            <div class="emptybox"></div>
-        </div>
-
-            <div class="formelt">
-            <h3>Message</h3>
-            <div class="emptybox2"></div>
-        </div>
-
-            <div class="flexrow envoyer">
-                <img src="Icones/icone_fleche_nav.png" alt="Icone flèche de navigation">
-                <p>Envoyer</p>
-            </div>
-        </div>  end of formflex
-
-    </section> -->
 </main>
-    <footer>
+    <footer class="darkgreybg">
         <div class="footer-container flexrow">
         <div class="footer1 flexcolumn">
-        <h3 class="whitetext">Quatre Pattes</h3>
-        <p>Ensemble, protégeons les animaux et donnons-leur une vie meilleure</p>
+        <h3 class="white">Quatre Pattes</h3>
+        <p class="grey">Ensemble, protégeons les animaux et donnons-leur une vie meilleure</p>
     </div>
     <div class="footer2 flexcolumn">
-        <h3 class="whitetext">Contact</h3>
+        <h3 class="white">Contact</h3>
         <div class="divcontact flexrow">
         <img src="Icones/icone_mail.png" alt="icone du mail">
-            <p>contact@quatrepattes.org</p>
+            <p class="grey">contact@quatrepattes.org</p>
         </div>
     </div>
     <div class="footer3 flexcolumn">
-        <h3 class="whitetext">Suivez-nous</h3>
+        <h3 class="white">Suivez-nous</h3>
         <br>
         </div>
     </div>

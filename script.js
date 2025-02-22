@@ -1,4 +1,3 @@
-
 // Call-to-action (CTA) : 
 
 let selectedAmount = null;
