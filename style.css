@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     font-family: "Inter", serif;
 }
 
@@ -157,9 +157,8 @@ font-size: 5.3rem;
 .justify-spacearound {
     display: flex;
     justify-content: space-around
-    }
+}
     
-
 .flex1share  {
     display: flex;
     flex: 1;
@@ -187,19 +186,17 @@ font-size: 5.3rem;
     bottom: 1rem;
     left: 1rem;
 }
-
   
 .nameposition {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
+}
 
 /* roundborder */
 
 .roundborder {
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 .roundborderwhite {
     border-radius: 0.5rem;
@@ -223,9 +220,14 @@ font-size: 5.3rem;
 }
 
 .round-right {
-    border-top-right-radius: 0.5rem; border-bottom-right-radius: 0.5rem; 
+    border-top-right-radius: 1rem; 
+    border-bottom-right-radius: 1rem; 
 }
 
+.round-left {
+    border-top-left-radius: 1rem; 
+    border-bottom-left-radius: 1rem; 
+}
 
 /* gap, padding, margin */
 
@@ -252,8 +254,24 @@ font-size: 5.3rem;
     padding: 2rem;
 }
 
+.pad4 {
+    padding: 4rem;
+}
+
 .pad5 {
-    padding: 2rem;
+    padding: 5rem;
+}
+
+.pad10 {
+    padding: 10rem;
+}
+
+.padleft5 {
+    padding-left: 5rem;
+}
+
+.padright2 {
+    padding-right: 2rem;
 }
 
 .marginauto {
@@ -277,6 +295,30 @@ font-size: 5.3rem;
 
 .margin5 {
     margin: 5rem
+}
+
+.marginleft2 {
+    margin-left: 2rem
+} 
+
+.marginleft3 {
+    margin-left: 3rem
+}
+
+.marginbottom1 {
+    margin-bottom: 1rem
+}
+
+.marginbottom2 {
+    margin-bottom: 2rem
+}
+
+.marginbottom5 {
+    margin-bottom: 5rem
+}
+
+.marginright2 {
+    margin-right: 2rem;
 }
 
 .margin27 {
@@ -307,23 +349,21 @@ font-size: 5.3rem;
     filter: brightness(0.7) contrast(1.1);
 }
 
-.S3bgimage {
-    background-image: url("Images/photo2.png");
-    filter: brightness(0.7) contrast(1.1);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 70%; 
+.S3flex img {
+    width: 100%;
 }
 
 .main-box img {
-    width: 100%;
+    width: 96%;
     height: 60vh; 
     object-fit: cover;
+    border-radius: 1rem;
   }
 
 .mini-box img {
     height: 15vh; 
     object-fit: cover;
+    border-radius: 1rem;
   }
 
   .S7image1,
@@ -509,21 +549,40 @@ font-size: 5.3rem;
 
     .S3flex {
         display: flex;
-        flex-direction: column;
-        margin: 1rem;
-            
+        flex-direction: column;   
     }
 
-    .S3flexdiv2 {
-        width: 100%;
-        height: 45vh;
+    .S3 .whitebg {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 2rem
     }
 
-    .S3bgimage {
-        width: 100%;
-        background-size: cover;
-        height: 45vh;
+    .round-left {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0
     }
+    .round-right {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem
+    }
+
+    .S3 .width50 {
+        width: 100%
+    }
+    .S3flex img {
+        width: 100%;
+    }
+
+    .main-box img {
+        width: 90%
+      }
+
+    .mini-box img {
+        width: 100%;
+    }
+  
 
     .S5flex1 {
         width: 90%;
@@ -582,6 +641,7 @@ font-size: 5.3rem;
         align-items: flex-start;
         text-align: left;
         gap: 2rem;
+        
     }
     .footer1,
     .footer2,
@@ -589,3 +649,5 @@ font-size: 5.3rem;
         min-width: 100%;
     }
 }
+
+
