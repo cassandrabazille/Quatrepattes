@@ -92,6 +92,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const updateContent = (isCorrect, buttonElement, otherButtonElement) => {
             if (!buttonElement.style.backgroundColor && !otherButtonElement.style.backgroundColor) {
                 answeredQuestions++;
+                if(isCorrect) {
+                  score++;
+                }
                 let icon = isCorrect ? '✔️' : '❌';
                 let color = isCorrect ? '#D6FCE1' : '#FFE2E2';
                 questionElement.innerHTML = `<h3>${q.question}</h3><p style="background-color: ${color}; padding: 10px; border-radius: 5px;">${icon} ${q.explanation}</p>`;
